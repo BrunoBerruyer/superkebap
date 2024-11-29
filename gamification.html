@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER KEBAP - Borne interactive gamifiée</title>
+    <link rel="stylesheet" href="styles03.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Titre du site -->
+        <div class="site-title">
+            <a href="index.html" class="title-main">SUPER KEBAP</a>
+            <span class="title-separator">-</span>
+            <span class="title-sub">BORNE INTERACTIVE</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="presentation.html" class="nav-link"><span>PRÉSENTATION</span></a></li>
+                <li><a href="personas.html" class="nav-link"><span>PERSONAS</span></a></li>
+                <li><a href="empathy.html" class="nav-link"><span>EMPATHY MAP</span></a></li>
+                <li><a href="gamification.html" class="nav-link active"><span>GAMIFICATION</span></a></li>
+                <li><a href="flows.html" class="nav-link"><span>USER FLOWS</span></a></li>
+                <li><a href="prototype.html" class="nav-link"><span>PROTOTYPE</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Zone de contenu principal -->
+        <main class="content-area">
+            <div class="content-container">
+                <h1 class="section-title">GAMIFICATION</h1>
+                
+                <!-- Bouton pour ouvrir la galerie -->
+                <div class="personas-button-container">
+                    <button class="personas-button" id="openGallery">
+                        EXEMPLES d'ANIMATIONS
+                    </button>
+                </div>
+        
+                <!-- Contenu texte -->
+                <div class="intro-text">
+                    L'Aventure "Super Kebap" : Quand Commander Devient un Jeu ! Imaginez un héros inattendu : un kebab en cape rouge, souriant et dynamique, prêt à vous guider dans une aventure culinaire unique ! Notre mascotte "Super Kebap" transforme une simple commande en une quête épique où chaque choix est une nouvelle étape de votre voyage gastronomique.
+                </div>
+        
+                <div class="feature-section">
+                    <h2>L'Aventure Interactive</h2>
+                    <p>Dès votre arrivée, Super Kebap vous accueille avec enthousiasme. La construction de votre kebab devient une véritable aventure :</p>
+                    <ul>
+                        <li>Jonglant avec les pains comme un artiste de cirque</li>
+                        <li>Se transformant en chef cuisinier pour la sélection des viandes</li>
+                        <li>Devenant un maître ninja pour découper les légumes avec style</li>
+                        <li>Plongeant héroïquement dans un bain de frites dorées</li>
+                        <li>Se métamorphosant en artiste peintre pour le choix des sauces</li>
+                        <li>Surfant sur une vague de boisson rafraîchissante !</li>
+                    </ul>
+                    <p>Notre barre de progression, en forme de kebab qui se construit progressivement, vous montre votre progression dans cette quête culinaire. Chaque ingrédient ajouté est une petite victoire, chaque étape complétée vous rapproche du statut de "Maître Kebapier".</p>
+                    <p>Les "Kebap Coins" que vous gagnez ne sont pas de simples points : ils sont les témoins de votre progression dans cette aventure gustative. De "Novice du Kebap" à "Maître Kebapier", chaque commande vous rapproche d'un nouveau titre prestigieux !</p>
+                    <p>Super Kebap n'est pas qu'une mascotte, c'est votre compagnon d'aventure qui transforme chaque visite en un moment mémorable. Après tout, pourquoi une commande ne serait-elle pas aussi amusante que délicieuse ?</p>
+                </div>
+        
+                <div class="solution-section">
+                    <h2>La Théorie Derrière la Magie</h2>
+                    <p>Notre approche de la gamification ne relève pas du simple hasard. Chaque élément ludique a été pensé pour créer une expérience à la fois amusante et efficace, s'appuyant sur des principes fondamentaux de psychologie et de design.</p>
+        
+                    <h3>Guide Émotionnel</h3>
+                    <p>La mascotte Super Kebap n'est pas qu'un simple personnage animé. Elle incarne ce que les experts appellent un "guide émotionnel", créant un lien personnel avec l'utilisateur tout au long de son parcours. C'est comme avoir un ami qui vous accompagne dans votre découverte culinaire.</p>
+        
+                    <h3>Système de Progression</h3>
+                    <p>Notre système de progression (Kebap Coins et niveaux d'expertise) s'inspire directement des mécaniques qui rendent les jeux si captivants. Quand vous passez de "Novice" à "Maître Kebapier", vous vivez ce que les chercheurs appellent le "sentiment de progression", un puissant moteur de motivation.</p>
+        
+                    <h3>Interactions Ludiques</h3>
+                    <p>Les interactions ludiques, comme le choix des légumes façon "Fruit Ninja" ou la roue de la fortune des sauces, ne sont pas que des animations amusantes. Elles appliquent le principe du "plaisir dans l'action", rendant chaque étape de la commande mémorable et agréable.</p>
+                </div>
+        
+                <p class="conclusion-text">
+                    Cette approche équilibrée entre divertissement et efficacité fait de Super Kebap non seulement un outil de commande pratique, mais aussi une expérience unique qui donne envie de revenir.
+                </p>
+            </div>
+        </main>
+
+        <div class="modal" id="personaModal">
+            <div class="modal-content">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="gallery-container">
+                    <div class="gallery-track">
+                        <img src=".png" alt="Persona 1" class="gallery-image">
+                       
+                        <!-- Répéter pour les 11 images -->
+                    </div>
+                </div>
+                <button class="nav-btn next-btn">&gt;</button>
+                <button class="close-btn">&times;</button>
+                <div class="counter">1/11</div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        © SUPER KEBAP 2024 - Maya Evrard • Leira Kiliç • Michael Gaza • Jean-Charles Frémont • Bruno Berruyer<br>
+        TJ UX Design | EFP Bruxelles
+    </footer>
+
+    <script src="personas.js"></script>
+</body>
+</html>

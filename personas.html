@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER KEBAP - Borne interactive gamifiée</title>
+    <link rel="stylesheet" href="styles03.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Titre du site -->
+        <div class="site-title">
+            <a href="index.html" class="title-main">SUPER KEBAP</a>
+            <span class="title-separator">-</span>
+            <span class="title-sub">BORNE INTERACTIVE</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="presentation.html" class="nav-link"><span>PRÉSENTATION</span></a></li>
+                <li><a href="personas.html" class="nav-link active"><span>PERSONAS</span></a></li>
+                <li><a href="empathy.html" class="nav-link"><span>EMPATHY MAP</span></a></li>
+                <li><a href="gamification.html" class="nav-link"><span>GAMIFICATION</span></a></li>
+                <li><a href="flows.html" class="nav-link"><span>USER FLOWS</span></a></li>
+                <li><a href="prototype.html" class="nav-link"><span>PROTOTYPE</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Zone de contenu principal -->
+        <main class="content-area">
+            <div class="content-container">
+                <h1 class="section-title">LES PERSONAS</h1>
+                
+                <!-- Bouton pour ouvrir la galerie -->
+                <div class="personas-button-container">
+                    <button class="personas-button" id="openGallery">
+                        CONSULTER LES FICHES PERSONAS
+                    </button>
+                </div>
+        
+                <!-- Contenu texte -->
+                <div class="intro-text">
+                    La conception centrée utilisateur de notre borne interactive de snack répond aux besoins de plusieurs personas identifiés : les travailleurs, les étudiants, les familles et les touristes. Cette diversité nous amène à appliquer le principe fondamental d'accessibilité universelle de Don Norman : créer une interface intuitive et utilisable par tous, indépendamment de leur niveau d'expertise technologique.
+                </div>
+        
+                <div class="feature-section">
+                    <h2>Conception Adaptée aux Besoins</h2>
+                    <p>Pour les travailleurs et étudiants pressés, l'interface applique la loi de Hick-Hyman en réduisant la charge cognitive lors des choix. Concrètement, cela se traduit par une navigation claire et hiérarchisée (catégories > produits > personnalisation), permettant une prise de décision rapide tout en maintenant un modèle mental cohérent du processus de commande, comme le préconise Jakob Nielsen.</p>
+                    <p>Les familles et les groupes bénéficient d'un "Mode Groupe" avec une interface adaptée, suivant le principe de flexibilité d'usage de Shneiderman. La gamification, incarnée par notre mascotte "Super Kebap", ajoute une dimension ludique qui engage particulièrement ce segment tout en respectant le principe de plaisir d'utilisation défini par Hassenzahl dans son modèle UX.</p>
+                    <p>Pour les touristes, le "Mode Découverte" avec son interface multilingue (FR, NL, EN) applique le principe de correspondance avec le monde réel. Les visualisations 3D des produits et les animations intuitives transcendent les barrières linguistiques, offrant ce que nous appelons en UX design des affordances naturelles - des indices visuels qui guident instinctivement l'utilisation.</p>
+                </div>
+        
+                <div class="solution-section">
+                    <h2>Principes UX Appliqués</h2>
+                    <p>La barre de progression en forme de kebab qui se construit progressivement illustre parfaitement le principe de feedback informatif de Molich, tandis que notre système de récompenses "Kebap Coins" s'appuie sur les mécaniques de motivation intrinsèque pour fidéliser les utilisateurs.</p>
+                    <p>Notre interface respecte les principales heuristiques de Nielsen, tout en les adaptant à notre contexte spécifique :</p>
+                    <ul>
+                        <li>Visibilité de l'état du système via une progression claire</li>
+                        <li>Correspondance système-monde réel avec des métaphores visuelles pertinentes</li>
+                        <li>Contrôle utilisateur intuitif à chaque étape</li>
+                        <li>Prévention des erreurs par un design guidé</li>
+                        <li>Reconnaissance plutôt que rappel grâce à des éléments visuels explicites</li>
+                    </ul>
+                </div>
+        
+                <p class="conclusion-text">
+                    Cette approche équilibrée de la conception UX, ancrée dans les fondamentaux théoriques tout en répondant aux besoins pratiques des utilisateurs, crée une expérience à la fois efficace et engageante. La borne devient ainsi une interface qui transforme l'acte d'achat en une expérience satisfaisante et mémorable, adaptée à chaque profil d'utilisateur tout en maintenant une cohérence globale dans son design.
+                </p>
+            </div>
+        </main>
+
+        <div class="modal" id="personaModal">
+            <div class="modal-content">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="gallery-container">
+                    <div class="gallery-track">
+                        <img src="PERSONA001_TAKUMI.png" alt="Persona 1" class="gallery-image">
+                        <img src="PERSONA002_Famille.png" alt="Persona 1" class="gallery-image">
+                        <img src="PERSONA003_Groupe_de_touristes.png" alt="Persona 1" class="gallery-image">
+                        <img src="PERSONA004_La_bande_a_Thomas.png" alt="Persona 1" class="gallery-image">
+                        <img src="PERSONA005_La_bande_a_Sofiane.png" alt="Persona 1" class="gallery-image">
+                        <img src="PERSONA006_Lucas.png" alt="Persona 1" class="gallery-image">
+                        <img src="DAVID.png" alt="Persona 1" class="gallery-image">
+                        <img src="FATIMA.png" alt="Persona 1" class="gallery-image">
+                        <img src="MARC.png" alt="Persona 1" class="gallery-image">
+                        <img src="PIERRE.png" alt="Persona 1" class="gallery-image">
+                        <img src="SARAH.png" alt="Persona 1" class="gallery-image">
+                        <!-- Répéter pour les 11 images -->
+                    </div>
+                </div>
+                <button class="nav-btn next-btn">&gt;</button>
+                <button class="close-btn">&times;</button>
+                <div class="counter">1/11</div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        © SUPER KEBAP 2024 - Maya Evrard • Leira Kiliç • Michael Gaza • Jean-Charles Frémont • Bruno Berruyer<br>
+        TJ UX Design | EFP Bruxelles
+    </footer>
+
+    <script src="personas.js"></script>
+</body>
+</html>

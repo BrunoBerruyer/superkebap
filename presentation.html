@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER KEBAP - Borne interactive gamifiée</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Titre du site -->
+        <div class="site-title">
+            <a href="index.html" class="title-main">SUPER KEBAP</a>
+            <span class="title-separator">-</span>
+            <span class="title-sub">BORNE INTERACTIVE</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="presentation.html" class="nav-link active"><span>PRÉSENTATION</span></a></li>
+                <li><a href="personas.html" class="nav-link"><span>PERSONAS</span></a></li>
+                <li><a href="empathy.html" class="nav-link"><span>EMPATHY MAP</span></a></li>
+                <li><a href="gamification.html" class="nav-link"><span>GAMIFICATION</span></a></li>
+                <li><a href="flows.html" class="nav-link"><span>USER FLOWS</span></a></li>
+                <li><a href="prototype.html" class="nav-link"><span>PROTOTYPE</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Zone de contenu principal -->
+        <main class="content-area">
+            <div class="content-container">
+                <h1 class="section-title">PRÉSENTATION DE LA BORNE</h1>
+                
+                <div class="intro-section">
+                        <div class="intro-text">
+                            Notre projet réinvente la commande en restauration rapide grâce à une borne interactive innovante qui transforme l'acte d'achat en une expérience engageante et personnalisée.
+                        </div>
+                        <div class="borne-image-container">
+                            <img src="borne.jpg" alt="Borne interactive Super Kebap" class="borne-image">
+                        </div>
+                    </div>
+            
+                    <div class="feature-section">
+                    <h2>L'Innovation au Service de l'Expérience Utilisateur</h2>
+                    <ul>
+                        <li>Interface intuitive adaptée à tous les profils d'utilisateurs</li>
+                        <li>Personnalisation poussée des commandes</li>
+                        <li>Système de paiement sécurisé et flexible</li>
+                        <li>Gamification avec notre mascotte "Super Kebap"</li>
+                    </ul>
+                </div>
+
+                <div class="solution-section">
+                    <h2>Une Solution Pensée Pour Tous</h2>
+                    <p>Notre borne s'adapte aux besoins de chacun :</p>
+                    <ul>
+                        <li>Commande rapide pour les utilisateurs pressés</li>
+                        <li>Mode découverte pour les nouveaux clients</li>
+                        <li>Options de groupe pour les familles</li>
+                        <li>Interface multilingue pour les touristes</li>
+                    </ul>
+                </div>
+
+                <p class="conclusion-text">
+                    En fusionnant technologie et design centré utilisateur, nous transformons un simple terminal de commande en un point de contact qui crée du lien entre le snack et ses clients.
+                </p>
+                <div class="modal" id="imageModal">
+                    <span class="modal-close">&times;</span>
+                    <img src="borne.jpg" alt="Borne interactive Super Kebap" class="modal-content">
+                </div>
+            </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © SUPER KEBAP 2024 - Maya Evrard • Leira Kiliç • Michael Gaza • Jean-Charles Frémont • Bruno Berruyer<br>
+        TJ UX Design | EFP Bruxelles
+    </footer>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('imageModal');
+    const img = document.querySelector('.borne-image-container');
+    const closeBtn = document.querySelector('.modal-close');
+
+    img.onclick = function() {
+        modal.classList.add('show');
+    }
+
+    closeBtn.onclick = function() {
+        modal.classList.remove('show');
+    }
+
+    modal.onclick = function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('show');
+        }
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            modal.classList.remove('show');
+        }
+    });
+});
+</script>
+</body>
+</html>
+</body>
+</html>

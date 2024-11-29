@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER KEBAP - Borne interactive gamifiée</title>
+    <link rel="stylesheet" href="styles03.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Titre du site -->
+        <div class="site-title">
+            <a href="index.html" class="title-main">SUPER KEBAP</a>
+            <span class="title-separator">-</span>
+            <span class="title-sub">BORNE INTERACTIVE</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="presentation.html" class="nav-link"><span>PRÉSENTATION</span></a></li>
+                <li><a href="personas.html" class="nav-link"><span>PERSONAS</span></a></li>
+                <li><a href="empathy.html" class="nav-link active"><span>EMPATHY MAP</span></a></li>
+                <li><a href="gamification.html" class="nav-link"><span>GAMIFICATION</span></a></li>
+                <li><a href="flows.html" class="nav-link"><span>USER FLOWS</span></a></li>
+                <li><a href="prototype.html" class="nav-link"><span>PROTOTYPE</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Zone de contenu principal -->
+        <main class="content-area">
+            <div class="content-container">
+                <h1 class="section-title">EMPATHY MAP</h1>
+                
+                <!-- Bouton pour ouvrir la galerie -->
+                <div class="personas-button-container">
+                    <button class="personas-button" id="openGallery">
+                        CONSULTER LA FICHE EMPATHY MAP
+                    </button>
+                </div>
+        
+                <!-- Contenu texte -->
+                <div class="intro-text">
+                    L'empathy map, outil conceptualisé par Dave Gray, nous permet de structurer notre compréhension des utilisateurs selon quatre axes fondamentaux : Says, Thinks, Does et Feels. Cette approche, enrichie par les travaux d'Alan Cooper sur les personas, nous offre une vision holistique des besoins et motivations de nos utilisateurs.
+                </div>
+        
+                <div class="feature-section">
+                    <h2>Analyse des Quadrants</h2>
+                    <p>Dans le quadrant "Says", nous identifions des verbatims clés révélant des préoccupations concrètes : gestion du budget, besoin de rapidité pour les groupes, et désir d'exploration culinaire. Ces expressions directes, comme le souligne Donald Norman, sont essentielles pour comprendre les attentes explicites des utilisateurs.</p>
+                    <p>Le quadrant "Thinks" révèle des aspirations plus profondes : besoin de simplicité, désir de personnalisation, et recherche d'une expérience adaptée. Cette dimension cognitive, théorisée par Jakob Nielsen, nous guide vers la conception d'une interface qui anticipe les besoins implicites des utilisateurs.</p>
+                    <p>La section "Does" met en lumière les comportements réels : consultation détaillée des menus, sauvegarde des favoris, et comparaison des prix. Ces actions observables, selon le principe de "behavioral design" de Steve Krug, sont cruciales pour concevoir des parcours utilisateur efficaces.</p>
+                    <p>Enfin, le quadrant "Feels" expose un spectre émotionnel allant du stress à la satisfaction, en passant par la curiosité et l'impatience. Cette dimension émotionnelle, soulignée par Don Norman dans "Emotional Design", influence directement l'expérience utilisateur et la fidélisation.</p>
+                </div>
+        
+                <div class="solution-section">
+                    <h2>Application aux Flows</h2>
+                    <h3>Flow Commander</h3>
+                    <h4>Répond au "Says" :</h4>
+                    <ul>
+                        <li>Sauvegarde intelligente des favoris pour les commandes répétées</li>
+                        <li>Mode groupe pour commander facilement et rapidement</li>
+                        <li>Mise en avant des promotions et comparaison des prix</li>
+                        <li>Section dédiée aux plats locaux et spécialités</li>
+                    </ul>
+        
+                    <h4>Aligné avec le "Thinks" :</h4>
+                    <ul>
+                        <li>Interface épurée et intuitive pour une expérience rapide</li>
+                        <li>Options clairement présentées et catégorisées</li>
+                        <li>Système de recommandations personnalisées</li>
+                    </ul>
+        
+                    <h3>Flow Personnalisation</h3>
+                    <ul>
+                        <li>Visuels détaillés pour faciliter les choix</li>
+                        <li>Options de partage pour les groupes</li>
+                        <li>Filtres rapides pour les heures de pointe</li>
+                        <li>Système de favoris facilement accessible</li>
+                    </ul>
+        
+                    <h3>Flow Paiement</h3>
+                    <ul>
+                        <li>Options de paiement partagé pour les groupes</li>
+                        <li>Affichage clair des promotions</li>
+                        <li>Gestion du budget facilitée</li>
+                        <li>Historique des commandes accessible</li>
+                    </ul>
+                </div>
+        
+                <p class="conclusion-text">
+                    Cette approche intégrée assure que chaque aspect de l'expérience utilisateur répond aux besoins émotionnels et pratiques identifiés dans l'empathy map.
+                </p>
+            </div>
+        </main>
+
+        <div class="modal" id="personaModal">
+            <div class="modal-content">
+                <button class="nav-btn prev-btn">&lt;</button>
+                <div class="gallery-container">
+                    <div class="gallery-track">
+                        <img src="Empathy_Map.png" alt="Persona 1" class="gallery-image">
+                       
+                        <!-- Répéter pour les 11 images -->
+                    </div>
+                </div>
+                <button class="nav-btn next-btn">&gt;</button>
+                <button class="close-btn">&times;</button>
+                <div class="counter">1/11</div>
+            </div>
+        </div>
+
+    <footer class="footer">
+        © SUPER KEBAP 2024 - Maya Evrard • Leira Kiliç • Michael Gaza • Jean-Charles Frémont • Bruno Berruyer<br>
+        TJ UX Design | EFP Bruxelles
+    </footer>
+
+    <script src="personas.js"></script>
+</body>
+</html>
